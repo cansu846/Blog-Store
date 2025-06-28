@@ -1,0 +1,24 @@
+﻿@using BlogStore.EnitityLayer.Entities
+@model Article
+@{
+    ViewData["Title"] = "CreateArticle";
+    Layout = "~/Views/Shared/_AuthorLayout.cshtml";
+}
+
+<h1>Makale Oluştur</h1>
+<form method="post">
+    <label>Makale Başlıgı</label>
+    <input type="text" asp-for="Title" class="form-control"/>
+    <br />
+    <label>Makale Görseli</label>
+    <input type="text" asp-for="ImageUrl" class="form-control" />
+    <br />
+    <label>Makale Kategorisi</label>
+    @Html.DropDownListFor(x=>x.CategoryId, (List<SelectListItem>)ViewBag.v, new {@class ="form-control"})
+    <br />
+    <label>Makale İçeriği</label>
+    <textarea asp-for="Description" rows="5" class="form-control"></textarea>
+    <br />
+    <button class="btn btn-primary">Makaleyi Oluştur</button>
+</form>
+

@@ -1,0 +1,56 @@
+﻿@using BlogStore.EnitityLayer.Entities
+@model List<Article>
+
+<div class="section search-result-wrap">
+    <div class="container">
+
+        <div class="row posts-entry">
+            <div class="col-lg-12">
+                @foreach (var item in Model)
+                {
+                    <div class="blog-entry d-flex blog-entry-search-item">
+                        <a href="/Article/ArticleDetail/@item.ArticleId" class="img-link me-4">
+                            <img src="@item.ImageUrl" alt="Image" class="img-fluid">
+                        </a>
+                        <div>
+                            <span class="date">
+                                @item.CreateDate.ToString("dd-MMM-yyyy")
+                                <a href="#">@item.Category.CategoryName</a>
+                            </span>
+                            <h2><a href="/Article/ArticleDetail/@item.ArticleId">@item.Title</a></h2>
+                            <p>
+                                @if (item.Description.Length > 100)
+                                {
+                                    @item.Description.Substring(0, 100)
+                                }
+                                else
+                                {
+                                    @item.Description
+                                }
+                                ...
+
+                            </p>
+                            <p><a href="/Article/ArticleDetail/@item.ArticleId" class="btn btn-sm btn-outline-primary">Devamını Oku</a></p>
+                        </div>
+                    </div>
+                }
+
+                <div class="row text-start pt-5 border-top">
+                    <div class="col-md-12">
+                        <div class="custom-pagination">
+                            <span>1</span>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <span>...</span>
+                            <a href="#">15</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

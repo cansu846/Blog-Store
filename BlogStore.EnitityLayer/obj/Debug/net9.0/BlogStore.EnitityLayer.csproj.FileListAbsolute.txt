@@ -1,0 +1,14 @@
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\bin\Debug\net9.0\BlogStore.EnitityLayer.deps.json
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\bin\Debug\net9.0\BlogStore.EnitityLayer.runtimeconfig.json
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\bin\Debug\net9.0\BlogStore.EnitityLayer.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\bin\Debug\net9.0\BlogStore.EnitityLayer.pdb
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\obj\Debug\net9.0\BlogStore.EnitityLayer.csproj.AssemblyReference.cache
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\obj\Debug\net9.0\BlogStore.EnitityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\obj\Debug\net9.0\BlogStore.EnitityLayer.AssemblyInfoInputs.cache
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\obj\Debug\net9.0\BlogStore.EnitityLayer.AssemblyInfo.cs
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\obj\Debug\net9.0\BlogStore.EnitityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\obj\Debug\net9.0\BlogStore.EnitityLayer.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\obj\Debug\net9.0\refint\BlogStore.EnitityLayer.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\obj\Debug\net9.0\BlogStore.EnitityLayer.pdb
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\obj\Debug\net9.0\BlogStore.EnitityLayer.genruntimeconfig.cache
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.EnitityLayer\obj\Debug\net9.0\ref\BlogStore.EnitityLayer.dll

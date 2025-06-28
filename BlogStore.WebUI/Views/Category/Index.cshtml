@@ -1,0 +1,26 @@
+﻿@using BlogStore.EnitityLayer.Entities
+@model List<Category>
+@{
+}
+<div class="container">
+    <br />
+    <table class="table table-hover">
+        <tr>
+            <th>#</th>
+            <th>Kategori adı</th>
+            <th>Sil</th>
+            <th>Guncelle</th>
+        </tr>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.CategoryId</td>
+                <td>@item.CategoryName</td>
+                <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Delete</a></td>
+                <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-success">Update</a></td>
+            </tr>
+        }
+    </table>
+     <a href="/Category/CreateCategory" class="btn btn-success">Add Category</a>
+
+</div>

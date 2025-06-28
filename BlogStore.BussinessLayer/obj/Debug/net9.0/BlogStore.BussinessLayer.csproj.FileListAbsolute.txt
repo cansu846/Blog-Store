@@ -1,0 +1,17 @@
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\bin\Debug\net9.0\BlogStore.BussinessLayer.deps.json
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\bin\Debug\net9.0\BlogStore.BussinessLayer.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\bin\Debug\net9.0\BlogStore.BussinessLayer.pdb
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\bin\Debug\net9.0\BlogStore.DataAccessLayer.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\bin\Debug\net9.0\BlogStore.EnitityLayer.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\bin\Debug\net9.0\BlogStore.DataAccessLayer.pdb
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\bin\Debug\net9.0\BlogStore.EnitityLayer.pdb
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\obj\Debug\net9.0\BlogStore.BussinessLayer.csproj.AssemblyReference.cache
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\obj\Debug\net9.0\BlogStore.BussinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\obj\Debug\net9.0\BlogStore.BussinessLayer.AssemblyInfoInputs.cache
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\obj\Debug\net9.0\BlogStore.BussinessLayer.AssemblyInfo.cs
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\obj\Debug\net9.0\BlogStore.BussinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\obj\Debug\net9.0\BlogStor.00B3D0B1.Up2Date
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\obj\Debug\net9.0\BlogStore.BussinessLayer.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\obj\Debug\net9.0\refint\BlogStore.BussinessLayer.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\obj\Debug\net9.0\BlogStore.BussinessLayer.pdb
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.BussinessLayer\obj\Debug\net9.0\ref\BlogStore.BussinessLayer.dll

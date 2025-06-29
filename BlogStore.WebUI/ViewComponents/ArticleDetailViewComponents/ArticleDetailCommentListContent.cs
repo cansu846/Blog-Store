@@ -3,19 +3,19 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BlogStore.WebUI.ViewComponents.ArticleDetailViewComponents
 {
-    public class _ArticleDetailCommentListComponentPartial:ViewComponent
+    public class ArticleDetailCommentListContent : ViewComponent
     {
         private readonly ICommentService _commentService;
 
-        public _ArticleDetailCommentListComponentPartial(ICommentService commentService)
+        public ArticleDetailCommentListContent(ICommentService commentService)
         {
             _commentService = commentService;
         }
 
         public IViewComponentResult Invoke(int id)
         {
-            ViewBag.articleId = id;
-            return View();  
+            var values = _commentService.TGetCommentsByArticle(id);
+            return View(values);
         }
     }
 }

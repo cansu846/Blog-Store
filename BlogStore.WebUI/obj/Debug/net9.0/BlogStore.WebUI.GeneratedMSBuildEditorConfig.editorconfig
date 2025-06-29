@@ -88,6 +88,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcQ3JlYXRlVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Shared/Components/ArticleDetailCommentListContent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQXJ0aWNsZURldGFpbENvbW1lbnRMaXN0Q29udGVudFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Shared/Components/ArticleDetailLeaveComment/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQXJ0aWNsZURldGFpbExlYXZlQ29tbWVudFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Shared/Components/ArticleDetailMorePostComponentPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQXJ0aWNsZURldGFpbE1vcmVQb3N0Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

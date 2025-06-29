@@ -1,7 +1,6 @@
 ﻿using BlogStore.DataAccessLayer.Abstract;
 using BlogStore.DataAccessLayer.Concrete;
 using BlogStore.DataAccessLayer.Context;
-using BlogStore.DataAccessLayer.Helpers;
 using BlogStore.EnitityLayer.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;

@@ -1,9 +1,11 @@
 ﻿using BlogStore.BussinessLayer.Abstract;
 using BlogStore.DataAccessLayer.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogStore.WebUI.Controllers
 {
+    [Authorize]
     public class ArticleController : Controller
     {
         private readonly IArticleService _articleService;

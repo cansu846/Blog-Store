@@ -1,0 +1,19 @@
+﻿@using BlogStore.EnitityLayer.Entities
+@model List<Comment>
+
+<h3 class="mb-5 heading">1 Yorum</h3>
+<ul class="comment-list">
+    @foreach (var item in Model)
+    {
+        <li class="comment">
+            <div class="vcard">
+                <img src="@item.AppUser.ImageUrl" alt="Image placeholder">
+            </div>
+            <div class="comment-body">
+                <h3>@item.AppUser.Name @item.AppUser.Surname</h3>
+                <div class="meta">@item.CommentDate.ToString("mm-dd-yyyy")</div>
+                <p>@item.CommentDetail</p>
+                <p><a href="#" class="reply rounded">Yanıtla</a></p>
+            </div>
+        </li>
+    }

@@ -30,6 +30,11 @@ builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<B
 
 builder.Services.AddDbContext<BlogContext>();
 
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Login/UserLogin/";   //yönlendirilecek login sayfas?
+    options.AccessDeniedPath = "/Login/AccessDenied"; // yetkisiz eri?im için (opsiyonel)
+});
 
 var app = builder.Build();
 

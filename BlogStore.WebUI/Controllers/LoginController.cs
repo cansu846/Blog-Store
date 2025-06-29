@@ -26,7 +26,7 @@ namespace BlogStore.WebUI.Controllers
             if (result.Succeeded)
             {
 
-                return RedirectToAction("CreateArticle", "Author");
+                return RedirectToAction("Index", "Default");
 
             }
             return View();

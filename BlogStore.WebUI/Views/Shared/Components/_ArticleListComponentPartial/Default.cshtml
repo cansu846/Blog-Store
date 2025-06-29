@@ -17,7 +17,7 @@
                                 @item.CreateDate.ToString("dd-MMM-yyyy")
                                 <a href="#">@item.Category.CategoryName</a>
                             </span>
-                            <h2><a href="/Article/ArticleDetail/@item.ArticleId">@item.Title</a></h2>
+                            <h2><a href="/Article/ArticleDetail/@item.Slug">@item.Title</a></h2>
                             <p>
                                 @if (item.Description.Length > 100)
                                 {
@@ -30,7 +30,7 @@
                                 ...
 
                             </p>
-                            <p><a href="/Article/ArticleDetail/@item.ArticleId" class="btn btn-sm btn-outline-primary">Devamını Oku</a></p>
+                            <p><a href="/Article/ArticleDetail/@item.Slug" class="btn btn-sm btn-outline-primary">Devamını Oku</a></p>
                         </div>
                     </div>
                 }

@@ -1,6 +1,8 @@
 ﻿using BlogStore.BussinessLayer.Abstract;
+using BlogStore.BussinessLayer.Helpers;
 using BlogStore.DataAccessLayer.Abstract;
 using BlogStore.EnitityLayer.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,6 +52,8 @@ namespace BlogStore.BussinessLayer.Concrete
 
         public void TInsert(Article entity)
         {
+            entity.Slug = SlugHelper.GenerateSlug(entity.Title);
+
             if (entity.Title.Length >= 5 && entity.Title.Length <= 100 &&
                 entity.Description != "")
                 {
@@ -74,6 +78,16 @@ namespace BlogStore.BussinessLayer.Concrete
         public List<Article> TGetArticlesByAppUser(string id)
         {
             return _articleDal.GetArticlesByAppUser(id);
+        }
+
+        public Article TGetArticleWithAuthor(int id)
+        {
+            return _articleDal.GetArticleWithAuthor(id);
+        }
+
+        public Article TGetArticleBySlug(string slug)
+        {
+            return _articleDal.GetArticleBySlug(slug);
         }
     }
 }

@@ -20,6 +20,12 @@ builder.Services.AddScoped<ICommentDal, EfCommentDal>();
 builder.Services.AddScoped<IArticleService,ArticleManager>();
 builder.Services.AddScoped<IArticleDal, EfArticleDal>();
 
+builder.Services.AddScoped<ITagService, TagManager>();
+builder.Services.AddScoped<ITagDal, EfTagDal>();
+
+builder.Services.AddScoped<IAboutService, AboutManager>();
+builder.Services.AddScoped<IAboutDal, EfAboutDal>();
+
 builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<BlogContext>();  
 
 builder.Services.AddDbContext<BlogContext>();
@@ -43,6 +49,11 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapStaticAssets();
+
+app.MapControllerRoute(
+    name: "articleDetailWithSlug",
+    pattern: "Article/ArticleDetail/{slug}",
+    defaults: new { controller = "Article", action = "ArticleDetail" });
 
 app.MapControllerRoute(
     name: "default",

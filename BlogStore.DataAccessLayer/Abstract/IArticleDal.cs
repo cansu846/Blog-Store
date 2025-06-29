@@ -13,5 +13,7 @@ namespace BlogStore.DataAccessLayer.Abstract
         List<Article> GetArticlesLast3();
         AppUser GetAppUserByArticleId(int id);
         List<Article> GetArticlesByAppUser(string id);
+        Article GetArticleWithAuthor(int id);
+        Article GetArticleBySlug(string slug);
     }
 }

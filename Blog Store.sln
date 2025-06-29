@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogStore.EnitityLayer", "BlogStore.EnitityLayer\BlogStore.EnitityLayer.csproj", "{11793332-E5D5-46FF-8BCB-DC5B55D78146}"
 EndProject
@@ -10,6 +10,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogStore.BussinessLayer", "BlogStore.BussinessLayer\BlogStore.BussinessLayer.csproj", "{A8520E88-F715-4CDE-BB8B-DF2850CC279D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogStore.WebUI", "BlogStore.WebUI\BlogStore.WebUI.csproj", "{976BCFE0-6F60-48DB-BA90-5D65384D3E22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

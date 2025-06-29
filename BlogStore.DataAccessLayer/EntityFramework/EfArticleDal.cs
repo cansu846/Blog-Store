@@ -1,6 +1,7 @@
 ﻿using BlogStore.DataAccessLayer.Abstract;
 using BlogStore.DataAccessLayer.Concrete;
 using BlogStore.DataAccessLayer.Context;
+using BlogStore.DataAccessLayer.Helpers;
 using BlogStore.EnitityLayer.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -18,7 +19,11 @@ namespace BlogStore.DataAccessLayer.EntityFramework
         {
             _context = context; 
         }
-
+        public Article GetArticleBySlug(string slug)
+        {
+           var article = _context.Articles.FirstOrDefault(x => x.Slug == slug);
+            return article;
+        }
         public AppUser GetAppUserByArticleId(int id)
         {
             var value = _context.Articles.Where(x=>x.ArticleId==id).Include(x=>x.AppUser).Select(x=>x.AppUser).FirstOrDefault();
@@ -37,6 +42,11 @@ namespace BlogStore.DataAccessLayer.EntityFramework
         public List<Article> GetArticlesByAppUser(string id)
         {
             return _context.Articles.Include(x => x.Category).Where(x=>x.AppUserId==id).ToList();
+        }
+
+        public Article GetArticleWithAuthor(int id)
+        {
+            return _context.Articles.Include(x=>x.AppUser).Include(x=>x.Category).Where(x=>x.ArticleId==id).FirstOrDefault();
         }
     }
 }

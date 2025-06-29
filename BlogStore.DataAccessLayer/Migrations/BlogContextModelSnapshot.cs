@@ -22,6 +22,53 @@ namespace BlogStore.DataAccessLayer.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("BlogStore.EnitityLayer.Entities.About", b =>
+                {
+                    b.Property<int>("AboutId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AboutId"));
+
+                    b.Property<string>("MainTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AboutId");
+
+                    b.ToTable("Abouts");
+                });
+
+            modelBuilder.Entity("BlogStore.EnitityLayer.Entities.AboutSection", b =>
+                {
+                    b.Property<int>("AboutSectionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AboutSectionId"));
+
+                    b.Property<int>("AboutId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AboutSectionId");
+
+                    b.HasIndex("AboutId");
+
+                    b.ToTable("AboutSections");
+                });
+
             modelBuilder.Entity("BlogStore.EnitityLayer.Entities.AppUser", b =>
                 {
                     b.Property<string>("Id")
@@ -125,6 +172,10 @@ namespace BlogStore.DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Slug")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -345,6 +396,17 @@ namespace BlogStore.DataAccessLayer.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("BlogStore.EnitityLayer.Entities.AboutSection", b =>
+                {
+                    b.HasOne("BlogStore.EnitityLayer.Entities.About", "About")
+                        .WithMany("Sections")
+                        .HasForeignKey("AboutId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("About");
+                });
+
             modelBuilder.Entity("BlogStore.EnitityLayer.Entities.Article", b =>
                 {
                     b.HasOne("BlogStore.EnitityLayer.Entities.AppUser", "AppUser")
@@ -426,6 +488,11 @@ namespace BlogStore.DataAccessLayer.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("BlogStore.EnitityLayer.Entities.About", b =>
+                {
+                    b.Navigation("Sections");
                 });
 
             modelBuilder.Entity("BlogStore.EnitityLayer.Entities.AppUser", b =>

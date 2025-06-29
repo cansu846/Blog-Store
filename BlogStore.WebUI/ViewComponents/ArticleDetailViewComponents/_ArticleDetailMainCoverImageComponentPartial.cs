@@ -5,10 +5,17 @@ namespace BlogStore.WebUI.ViewComponents.ArticleDetailViewComponents
 {
     public class _ArticleDetailMainCoverImageComponentPartial : ViewComponent
     {
-      
-        public IViewComponentResult Invoke()
+      private readonly IArticleService _articleService;
+
+        public _ArticleDetailMainCoverImageComponentPartial(IArticleService articleService)
         {
-            return View();  
+            _articleService = articleService;
+        }
+
+        public IViewComponentResult Invoke(int id)
+        {
+            var article = _articleService.TGetArticleWithAuthor(id);
+            return View(article);  
         }
     }
 }

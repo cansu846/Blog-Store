@@ -13,5 +13,7 @@ namespace BlogStore.BussinessLayer.Abstract
         public List<Article> TGetArticlesLast3();
         public AppUser TGetAppUserByArticleId(int id);
         List<Article> TGetArticlesByAppUser(string id);
+        Article TGetArticleWithAuthor(int id);
+        Article TGetArticleBySlug(string slug);
     }
 }

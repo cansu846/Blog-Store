@@ -1,0 +1,91 @@
+﻿@using BlogStore.EnitityLayer.Entities
+@model List<Article>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="widget">
+                    <h3 class="mb-4">Hakkında</h3>
+                    <p>Uzak diyarlarda, kelime dağlarının ardında, Vokalia ve Consonantia ülkelerinden uzakta, kör metinler yaşar.</p>
+                </div> <!-- /.widget -->
+                <div class="widget">
+                    <h3>Sosyal Medya</h3>
+                    <ul class="list-unstyled social">
+                        <li><a href="#"><span class="icon-instagram"></span></a></li>
+                        <li><a href="#"><span class="icon-twitter"></span></a></li>
+                        <li><a href="#"><span class="icon-facebook"></span></a></li>
+                        <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                        <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                        <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                    </ul>
+                </div> <!-- /.widget -->
+            </div> <!-- /.col-lg-4 -->
+
+            <div class="col-lg-4 ps-lg-5">
+                <div class="widget">
+                    <h3 class="mb-4">Şirket</h3>
+                    <ul class="list-unstyled float-start links">
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Hizmetler</a></li>
+                        <li><a href="#">Vizyon</a></li>
+                        <li><a href="#">Misyon</a></li>
+                        <li><a href="#">Kullanım Şartları</a></li>
+                        <li><a href="#">Gizlilik Politikası</a></li>
+                    </ul>
+                    <ul class="list-unstyled float-start links">
+                        <li><a href="#">Ortaklar</a></li>
+                        <li><a href="#">İş Dünyası</a></li>
+                        <li><a href="#">Kariyer</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">SSS</a></li>
+                        <li><a href="#">Yaratıcı</a></li>
+                    </ul>
+                </div> <!-- /.widget -->
+            </div> <!-- /.col-lg-4 -->
+
+            <div class="col-lg-4">
+                <div class="widget">
+                    <h3 class="mb-4">Son Makaleler</h3>
+                    <div class="post-entry-footer">
+                        <ul>
+                            @foreach(var item in Model)
+                            {
+                                <li>
+                                    <a href="">
+                                        <img src="@item.ImageUrl" alt="Image placeholder" class="me-4 rounded">
+                                        <div class="text">
+                                            <h4>@item.Title</h4>
+                                            <div class="post-meta">
+                                                <span class="mr-2">@item.CreateDate.ToString("mm-dd-yyyy")</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            }
+                        </ul>
+                    </div>
+
+
+                </div> <!-- /.widget -->
+            </div> <!-- /.col-lg-4 -->
+        </div> <!-- /.row -->
+
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <!--
+                    **==========
+                    NOT:
+                    Bu telif hakkı bağlantısını lütfen satın alma lisansı olmadan kaldırmayın: https://untree.co/license/
+                    **==========
+                -->
+
+                <p>
+                    Telif Hakkı &copy;<script>document.write(new Date().getFullYear());</script>. Tüm Hakları Saklıdır. &mdash; Sevgiyle tasarlandı: <a href="https://untree.co">Untree.co</a> | Dağıtım: <a href="https://themewagon.com">ThemeWagon</a> <!-- Lisans bilgisi: https://untree.co/license/ -->
+                </p>
+            </div>
+        </div>
+
+    </div> <!-- /.container -->
+</footer> <!-- /.site-footer -->

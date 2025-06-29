@@ -1,0 +1,14 @@
+﻿@using BlogStore.EnitityLayer.Entities
+@model List<Tag>
+
+<div class="sidebar-box">
+    <h3 class="heading">Etiketler</h3>
+    <ul class="tags">
+        @foreach(var item in Model)
+        {
+            <li><a href="#">@item.Title</a></li>
+
+        }
+      
+    </ul>
+</div>

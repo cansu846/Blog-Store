@@ -16,7 +16,6 @@ namespace BlogStore.DataAccessLayer.Concrete
         {
             _context = context;
         }
-
         public void Delete(int id)
         {
             var value = _context.Set<T>().Find(id);

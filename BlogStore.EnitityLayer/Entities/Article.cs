@@ -12,6 +12,7 @@ namespace BlogStore.EnitityLayer.Entities
         public string Title { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
+        public string Slug { get; set; } // article detail url bilgisini gizlemek için eklendi
         public DateTime CreateDate { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }

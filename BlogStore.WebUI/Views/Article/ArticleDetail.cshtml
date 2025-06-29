@@ -17,7 +17,7 @@
     </div>
 
     @await Component.InvokeAsync("_NavbarLayoutComponentPartial")
-    @await Component.InvokeAsync("_ArticleDetailMainCoverImageComponentPartial")
+    @await Component.InvokeAsync("_ArticleDetailMainCoverImageComponentPartial", new {id = ViewBag.Id})
 
     <section class="section">
         <div class="container">
@@ -28,10 +28,6 @@
 
                     @await Component.InvokeAsync("_ArticleDetailContentComponentPartial", new {id = ViewBag.Id})
 
-                    <div class="pt-5">
-                        <p>Categories:  <a href="#">Food</a>, <a href="#">Travel</a>  Tags: <a href="#">#manila</a>, <a href="#">#asia</a></p>
-                    </div>
-
                     @await Component.InvokeAsync("_ArticleDetailCommentListComponentPartial", new {id = ViewBag.Id})
 
                 </div>
@@ -39,12 +35,7 @@
                 <!-- END main-content -->
 
                 <div class="col-md-12 col-lg-4 sidebar">
-                    <div class="sidebar-box search-form-wrap">
-                        <form action="#" class="sidebar-search-form">
-                            <span class="bi-search"></span>
-                            <input type="text" class="form-control" id="s" placeholder="Type a keyword and hit enter">
-                        </form>
-                    </div>
+                    
                     <!-- END sidebar-box -->
                     @await Component.InvokeAsync("_ArticleDetailAboutAuthorComponentPartial", new {id = ViewBag.Id})
                     <!-- END sidebar-box -->
@@ -54,88 +45,17 @@
 
                   
                     <!-- END sidebar-box -->
-
-                    <div class="sidebar-box">
-                        <h3 class="heading">Tags</h3>
-                        <ul class="tags">
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Adventure</a></li>
-                            <li><a href="#">Food</a></li>
-                            <li><a href="#">Lifestyle</a></li>
-                            <li><a href="#">Business</a></li>
-                            <li><a href="#">Freelancing</a></li>
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Adventure</a></li>
-                            <li><a href="#">Food</a></li>
-                            <li><a href="#">Lifestyle</a></li>
-                            <li><a href="#">Business</a></li>
-                            <li><a href="#">Freelancing</a></li>
-                        </ul>
-                    </div>
-                </div>
+                    @await Component.InvokeAsync("ArticleDetailTagsComponentPartial")
                 <!-- END sidebar -->
 
             </div>
         </div>
     </section>
 
+    @await Component.InvokeAsync("ArticleDetailMorePostComponentPartial")
 
-    <!-- Start posts-entry -->
-    <section class="section posts-entry posts-entry-sm bg-light">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-12 text-uppercase text-black">More Blog Posts</div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="blog-entry">
-                        <a href="single.html" class="img-link">
-                            <img src="images/img_1_horizontal.jpg" alt="Image" class="img-fluid">
-                        </a>
-                        <span class="date">Apr. 14th, 2022</span>
-                        <h2><a href="single.html">Thought you loved Python? Wait until you meet Rust</a></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p><a href="#" class="read-more">Continue Reading</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="blog-entry">
-                        <a href="single.html" class="img-link">
-                            <img src="images/img_2_horizontal.jpg" alt="Image" class="img-fluid">
-                        </a>
-                        <span class="date">Apr. 14th, 2022</span>
-                        <h2><a href="single.html">Startup vs corporate: What job suits you best?</a></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p><a href="#" class="read-more">Continue Reading</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="blog-entry">
-                        <a href="single.html" class="img-link">
-                            <img src="images/img_3_horizontal.jpg" alt="Image" class="img-fluid">
-                        </a>
-                        <span class="date">Apr. 14th, 2022</span>
-                        <h2><a href="single.html">UK sees highest inflation in 30 years</a></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p><a href="#" class="read-more">Continue Reading</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="blog-entry">
-                        <a href="single.html" class="img-link">
-                            <img src="images/img_4_horizontal.jpg" alt="Image" class="img-fluid">
-                        </a>
-                        <span class="date">Apr. 14th, 2022</span>
-                        <h2><a href="single.html">Don’t assume your user data in the cloud is safe</a></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p><a href="#" class="read-more">Continue Reading</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- End posts-entry -->
-    @await Component.InvokeAsync("_ArticleDetailFooterComponentPartial")
+    @await Component.InvokeAsync("_FooterComponentPartial")
 
     <!-- /.site-footer -->
     <!-- Preloader -->

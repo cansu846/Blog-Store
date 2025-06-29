@@ -11,7 +11,7 @@
                     <a href="">
                         <img src="@item.ImageUrl" alt="Image placeholder" class="me-4 rounded">
                         <div class="text">
-                            <h4>@item.Description</h4>
+                            <h4>@item.Description.Substring(0,100)...</h4>
                             <div class="post-meta">
                                 <span class="mr-2">@item.CreateDate.ToString("dd-mm-yyyy") </span>
                             </div>

@@ -23,6 +23,10 @@ namespace BlogStore.WebUI.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateUser(UserRegisterViewModel userRegisterViewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(userRegisterViewModel);
+            }
             AppUser appUser = new AppUser()
             {
                 ImageUrl = "test",
@@ -33,8 +37,19 @@ namespace BlogStore.WebUI.Controllers
                 UserName = userRegisterViewModel.Username
             };
 
-            await _userManager.CreateAsync(appUser,userRegisterViewModel.Password);
-            return RedirectToAction("UserLogin","Login");
+            var result = await _userManager.CreateAsync(appUser, userRegisterViewModel.Password);
+            if (result.Succeeded)
+            {
+                return RedirectToAction("UserLogin", "Login");
+            }
+            else
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError("", item.Description);
+                }
+            }
+            return View();
         }
     }
 }

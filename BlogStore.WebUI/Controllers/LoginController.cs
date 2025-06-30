@@ -22,14 +22,19 @@ namespace BlogStore.WebUI.Controllers
         [HttpPost]
         public async Task<IActionResult> UserLogin(UserLoginViewModel userLoginViewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(userLoginViewModel);
+            }
             var result = await _signInManager.PasswordSignInAsync(userLoginViewModel.Username, userLoginViewModel.Password, true,false);
+            
             if (result.Succeeded)
             {
-
                 return RedirectToAction("Index", "Default");
-
             }
-            return View();
+
+            ModelState.AddModelError("","Geçersiz kullanıcı adı veya şifre");
+            return View(userLoginViewModel);
         }
     }
 }

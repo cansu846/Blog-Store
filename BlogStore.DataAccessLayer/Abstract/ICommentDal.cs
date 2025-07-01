@@ -10,5 +10,6 @@ namespace BlogStore.DataAccessLayer.Abstract
     public interface ICommentDal:IGenericDal<Comment>
     {
         public List<Comment> GetCommentsByArticle(int articleId); 
+        public List<Comment> GetCommentByUser(string userId); 
     }
 }

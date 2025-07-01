@@ -19,6 +19,11 @@ namespace BlogStore.DataAccessLayer.EntityFramework
             _blogContext = context; 
         }
 
+        public List<Comment> GetCommentByUser(string userId)
+        {
+            return _blogContext.Comments.Where(x => x.AppUserId == userId).ToList();
+        }
+
         public List<Comment> GetCommentsByArticle(int articleId)
         {
             var values = _blogContext.Comments.Include(x=>x.AppUser).Include(x=>x.Article).Where(x=>x.ArticleId==articleId).ToList();

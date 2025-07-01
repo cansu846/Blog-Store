@@ -41,7 +41,7 @@ namespace BlogStore.BussinessLayer.Concrete
 
         public void TInsert(Category entity)
         {
-            if (entity.CategoryName != "" && entity.CategoryName.Length >= 3 && entity.CategoryName.Length <= 30 && entity.CategoryName.Contains("a"))
+            if (entity.CategoryName != "" && entity.CategoryName.Length >= 3 && entity.CategoryName.Length <= 30 )
             {
                 _categoryDal.Insert(entity);
             }

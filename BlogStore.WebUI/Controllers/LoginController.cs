@@ -36,5 +36,11 @@ namespace BlogStore.WebUI.Controllers
             ModelState.AddModelError("","Geçersiz kullanıcı adı veya şifre");
             return View(userLoginViewModel);
         }
+
+      
+        public async Task<IActionResult> Logout() {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("UserLogin","Login");
+        }
     }
 }

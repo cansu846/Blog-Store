@@ -2368,7 +2368,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\flexy-bootstrap-lite-1.0.0\assets\css\styles.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1meOM4HloG513vC\u002BxAKdtip96VTU8hFpKBPW2/d\u002Bobw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"353831"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221meOM4HloG513vC\u002BxAKdtip96VTU8hFpKBPW2/d\u002Bobw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 28 Jun 2025 16:29:03 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"353831"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221meOM4HloG513vC\u002BxAKdtip96VTU8hFpKBPW2/d\u002Bobw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Jun 2025 08:12:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BlogStore.WebUI/flexy-bootstrap-lite-1.0.0/assets/css/styles.min.css.8ryp6bsq5o.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\flexy-bootstrap-lite-1.0.0\assets\css\styles.min.css.map'))</AssetFile>
@@ -2386,7 +2386,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\flexy-bootstrap-lite-1.0.0\assets\css\styles.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ylco63a75x"},{"Name":"integrity","Value":"sha256-1meOM4HloG513vC\u002BxAKdtip96VTU8hFpKBPW2/d\u002Bobw="},{"Name":"label","Value":"_content/BlogStore.WebUI/flexy-bootstrap-lite-1.0.0/assets/css/styles.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"353831"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221meOM4HloG513vC\u002BxAKdtip96VTU8hFpKBPW2/d\u002Bobw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 28 Jun 2025 16:29:03 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"353831"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221meOM4HloG513vC\u002BxAKdtip96VTU8hFpKBPW2/d\u002Bobw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Jun 2025 08:12:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BlogStore.WebUI/flexy-bootstrap-lite-1.0.0/assets/images/backgrounds/sidebar-buynow.h558qlphvs.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\flexy-bootstrap-lite-1.0.0\assets\images\backgrounds\sidebar-buynow.png'))</AssetFile>

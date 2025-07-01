@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Areas\Admin\Controllers\DefaultController.cs" />
     <Content Include="wwwroot\flexy-bootstrap-lite-1.0.0\.vscode\settings.json" />
   </ItemGroup>
 

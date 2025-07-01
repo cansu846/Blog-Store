@@ -1,12 +1,15 @@
 ﻿@using BlogStore.EnitityLayer.Entities
 @model List<Comment>
 @{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <div class="container">
     <br />
+    <h4 class="m-3">Yorum Listesi</h4>
     <table class="table table-hover">
         <tr>
             <th>#</th>
+            <th>Kullanıcı Adı</th>
             <th>Yorum detayı</th>
             <th>Sil</th>
             <th>Guncelle</th>
@@ -17,11 +20,11 @@
                 <td>@item.CommentId</td>
                 <td>@item.UserNameSurname</td>
                 <td>@item.CommentDetail</td>
-                <td><a href="/Comment/DeleteComment/@item.CommentId" class="btn btn-danger">Delete</a></td>
-                <td><a href="/Comment/UpdateComment/@item.CommentId" class="btn btn-success">Update</a></td>
+                <td><a href="/Comment/DeleteComment/@item.CommentId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Comment/UpdateComment/@item.CommentId" class="btn btn-success">Güncelle</a></td>
             </tr>
         }
     </table>
-    <a href="/Comment/CreateComment" class="btn btn-success">Add Comment</a>
+    <a href="/Comment/CreateComment" class="btn btn-success">Yorum Ekle</a>
 
 </div>

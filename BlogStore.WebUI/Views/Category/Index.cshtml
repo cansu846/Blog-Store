@@ -1,26 +1,61 @@
 ﻿@using BlogStore.EnitityLayer.Entities
 @model List<Category>
 @{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-<div class="container">
-    <br />
-    <table class="table table-hover">
-        <tr>
-            <th>#</th>
-            <th>Kategori adı</th>
-            <th>Sil</th>
-            <th>Guncelle</th>
-        </tr>
-        @foreach(var item in Model)
-        {
-            <tr>
-                <td>@item.CategoryId</td>
-                <td>@item.CategoryName</td>
-                <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Delete</a></td>
-                <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-success">Update</a></td>
-            </tr>
-        }
-    </table>
-     <a href="/Category/CreateCategory" class="btn btn-success">Add Category</a>
 
+<div class="container">
+    <div class="card mt-5">
+        <div class="card-body">
+            <div class="d-md-flex align-items-center">
+                <div>
+                    <h4 class="card-title">Kategori Listesi</h4>
+                    <p class="card-subtitle">
+                    </p>
+                </div>
+                <div class="ms-auto mt-3 mt-md-0">
+                   @*  <select class="form-select theme-select border-0" aria-label="Default select example">
+                        <option value="1">March 2025</option>
+                        <option value="2">March 2025</option>
+                        <option value="3">March 2025</option>
+                    </select> *@
+                </div>
+            </div>
+            <div class="table-responsive mt-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="px-0 text-muted">
+                                #
+                            </th>
+                            <th scope="col" class="px-0 text-muted">Kategori adı</th>
+                            <th scope="col" class="px-0 text-muted">
+                                Sil
+                            </th>
+                            <th scope="col" class="px-0 text-muted">
+                                Güncelle
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.CategoryId</td>
+                                <td>
+                                    <span class="badge text-bg-primary">@item.CategoryName</span>
+                                  
+                                </td>
+                                <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Sil</a></td>
+                                <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-success">Güncelle</a></td>
+                            </tr>
+                        }
+                      
+                    </tbody>
+                </table>
+                <a href="/Category/CreateCategory" class="btn btn-success mt-3">Kategori Oluştur</a>
+
+            </div>
+        </div>
+    </div>
 </div>

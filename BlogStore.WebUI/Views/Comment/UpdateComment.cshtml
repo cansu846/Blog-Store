@@ -1,11 +1,12 @@
 ﻿@using BlogStore.EnitityLayer.Entities
 @model Comment
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="container">
     <br /> <br />
+    <h1>Yorum Güncelleme Sayfası</h1>
     <form method="post">
         <input type="hidden" asp-for="CommentId" />
         <label>Yorum yapan adı soyadı</label>
@@ -14,6 +15,6 @@
         <label>Yorum detayı</label>
         <input type="text" asp-for="CommentDetail" class="form-control" />
         <br />
-        <button type="submit" class="btn btn-info">Create Comment</button>
+        <button type="submit" class="btn btn-info">Güncelle</button>
     </form>
 </div>

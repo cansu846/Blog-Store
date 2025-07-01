@@ -17,7 +17,7 @@ builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
 builder.Services.AddScoped<ICategoryService, CategoryManager>();
 builder.Services.AddScoped<ICommentService, CommentManager>();
 builder.Services.AddScoped<ICommentDal, EfCommentDal>();
-builder.Services.AddScoped<IArticleService,ArticleManager>();
+builder.Services.AddScoped<IArticleService, ArticleManager>();
 builder.Services.AddScoped<IArticleDal, EfArticleDal>();
 
 builder.Services.AddScoped<ITagService, TagManager>();
@@ -26,7 +26,9 @@ builder.Services.AddScoped<ITagDal, EfTagDal>();
 builder.Services.AddScoped<IAboutService, AboutManager>();
 builder.Services.AddScoped<IAboutDal, EfAboutDal>();
 
-builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<BlogContext>();  
+builder.Services.AddIdentity<AppUser, IdentityRole>()
+    .AddEntityFrameworkStores<BlogContext>()
+     .AddDefaultTokenProviders();
 
 builder.Services.AddDbContext<BlogContext>();
 
@@ -46,7 +48,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseStaticFiles();   
+app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseRouting();
 
@@ -59,6 +61,16 @@ app.MapControllerRoute(
     name: "articleDetailWithSlug",
     pattern: "Article/ArticleDetail/{slug}",
     defaults: new { controller = "Article", action = "ArticleDetail" });
+
+
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Default}/{action=Index}/{id?}");
+
+app.MapDefaultControllerRoute(); // opsiyonel
+
+
+
 
 app.MapControllerRoute(
     name: "default",

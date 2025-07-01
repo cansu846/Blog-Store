@@ -33,6 +33,11 @@ namespace BlogStore.BussinessLayer.Concrete
             return _commentDal.GetById(id);
         }
 
+        public List<Comment> TGetCommentByUser(string userId)
+        {
+            return _commentDal.GetCommentByUser(userId);
+        }
+
         public List<Comment> TGetCommentsByArticle(int id)
         {
             return _commentDal.GetCommentsByArticle(id);

@@ -1,10 +1,70 @@
-﻿
+﻿@using BlogStore.EnitityLayer.Entities
+@model AppUser
 @{
     ViewData["Title"] = "GetProfile";
-    Layout = "~/Views/Shared/_AuthorLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>GetProfile</h1>
+<div class="body-wrapper-inner">
+    <div class="container">
+        <div class="card mt-5">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h5 class="card-title fw-semibold mb-4">Hoşeldiniz, @ViewBag.name @ViewBag.surname</h5>
+                        <div class="card">
+                            <img src="@ViewBag.imageUrl" class="card-img-top" alt="..." style="width:300px; height300px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Hakkımda</h5>
+                                <p class="card-text">
+                                    @Model.Description
+                                </p>
+                                <p class="card-text">
+                                    Mail: @Model.Email
+                                </p>
+                                <p class="card-text">
+                                    Kullanıcı Adı: @Model.UserName
+                                </p>
+                                <p class="card-text">
+                                    Telefon: @Model.PhoneNumber
+                                </p>
+                                <a href="/UserPassword/ResetPassword" class="btn btn-primary">Şifremi Unuttum</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                            <h5 class="card-title fw-semibold mb-4">Makalelerim</h5>
+                        @foreach (var item in ViewBag.articleList)
+                        {
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.Title</h5>
+                                    <img src="@item.ImageUrl" class="card-img-top" alt="..." style="width:100px; height100px;">
+                                    <p class="card-text">@item.Description.Substring(0,100)..</p>
+                                    <a href="/Article/ArticleDetail/@item.Slug" class="btn btn-primary">Siteye Git</a>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="card-title fw-semibold mb-4">Yorumlarım</h5>
+                        @foreach (var item in ViewBag.commentList)
+                        {
+                            <div class="card border border-primary border-1 rounded-4 shadow-sm mb-3">
+                                <div class="card-body">
+                                    <p class="card-text mb-0">
+                                        @item.CommentDetail
+                                    </p>
+                                </div>
+                                <span class="text-end p-2">@item.CommentDate.ToString("mm-dd-yyyy")</span>
 
-<p>Hoşeldiniz, @ViewBag.name @ViewBag.surname</p>
-<p>Id: @ViewBag.id</p>
+                            </div>
+
+
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

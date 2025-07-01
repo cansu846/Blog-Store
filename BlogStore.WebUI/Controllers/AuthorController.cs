@@ -12,12 +12,14 @@ namespace BlogStore.WebUI.Controllers
         private readonly IArticleService _articleService;
         private readonly ICategoryService _categoryService;
         private readonly UserManager<AppUser> _userManager;
+        private readonly ICommentService _commentService;
 
-        public AuthorController(IArticleService articleService, ICategoryService categoryService, UserManager<AppUser> userManager)
+        public AuthorController(IArticleService articleService, ICategoryService categoryService, UserManager<AppUser> userManager, ICommentService commentService  )
         {
             _articleService = articleService;
             _categoryService = categoryService;
             _userManager = userManager;
+            _commentService = commentService;
         }
 
         [HttpGet]
@@ -27,7 +29,10 @@ namespace BlogStore.WebUI.Controllers
             ViewBag.name = user.Name;
             ViewBag.surname = user.Surname;
             ViewBag.id = user.Id;
-            return View();
+            ViewBag.imageUrl = user.ImageUrl;
+            ViewBag.articleList = _articleService.TGetArticlesByAppUser(user.Id);
+            ViewBag.commentList = _commentService.TGetCommentByUser(user.Id);
+            return View(user);
         }
 
         [HttpGet]

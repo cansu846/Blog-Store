@@ -1,5 +1,5 @@
 # 📰 BlogStore – Katmanlı Mimari Blog Platformu
-ASP.NET Core MVC ile geliştirilen BlogStore, kullanıcıların blog yazabildiği, yorum yapabildiği, toksik içeriklerin filtrelendiği, admin paneli ile içeriklerin yönetilebildiği modern bir web uygulamasıdır.
+ASP.NET Core MVC ile geliştirilen BlogStore, kullanıcıların blog yazabildiği, yorum yapabildiği, admin paneli ile içeriklerin yönetilebildiği modern bir web uygulamasıdır.
 
 ## 📌 Katmanlı Mimari ve Proje Özeti
 Bu proje aşağıdaki katmanlardan oluşur:
@@ -102,6 +102,10 @@ Geri bildirimler TempData["message"] ile
 
 AJAX işlemler sonrası bildirim, form sıfırlama, yeniden yönlendirme desteği
 
+### Eklenecek Özellikler
+
+ Toksiklik barındıran yorumların yapay zeka kullanılarak filtrelenmesi
+ 
 ### 🖼️ Ekran Görselleri 
 ![Screenshot 2025-07-06 110053](https://github.com/user-attachments/assets/ded68c43-47ed-4617-ab37-e6d1e7bd2217)
 ![Screenshot 2025-07-06 110034](https://github.com/user-attachments/assets/f78a4a4b-897e-4d6d-8406-c20199451f7c)

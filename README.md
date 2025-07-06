@@ -25,7 +25,7 @@ Her blog altında “Devamını Oku” butonu
 Slug yapısı ile URL’lerde sadece makale başlığı görünür
 Örn: /Article/ArticleDetail/yapay-zeka-ve-gelecek
 
-📄 Makale Detay Sayfası
+### 📄 Makale Detay Sayfası
 Tıklanan makalenin detayları gösterilir
 
 Başlık altında yazara ait bilgiler (adı, resmi, açıklama)
@@ -38,32 +38,25 @@ Toksik yorum filtresi (HuggingFace API ile)
 
 Yorumların toksik skoru yüksekse veritabanına eklenmez, kullanıcıya bildirim verilir
 
-🔐 Kimlik Doğrulama
+### 🔐 Kimlik Doğrulama
 Giriş (Login), Kayıt (Register), Şifre Sıfırlama, Çıkış işlemleri
 
 ASP.NET Identity ile entegre
 
 Şifre değiştirme, profil bilgilerini güncelleme
 
-🧠 Toksik İçerik Tespiti
-HuggingFace API kullanılarak unitary/toxic-bert modeli ile yorum analizi
-
-ToxicityScore alanı ile içerik puanlanır
-
-0.5 üzeri skorlar ayrı tabloda listelenir (admin panelinde moderasyon için)
-
-🛠️ Admin Paneli
+### 🛠️ Admin Paneli
 Tema: Flexy Admin Panel
 Panelde yer alan bölümler:
 
-📊 Dashboard
+### 📊 Dashboard
 Toplam kullanıcı, makale, kategori, yorum sayısı
 
 Son eklenen makaleler listesi
 
 Kullanıcıya özel hızlı istatistik kutucukları
 
-📋 İçerik Yönetimi
+### 📋 İçerik Yönetimi
 Makale oluşturma, silme, düzenleme
 
 Kategori ekle / sil / güncelle
@@ -72,23 +65,21 @@ Yorumları listeleme ve toksik olanları ayrı görme
 
 Profil bilgileri ve şifre güncelleme alanı
 
-🧩 Menü Alanları
+### 🧩 Menü Alanları
 Yeni Makale Oluştur
 
-Makale Listem
+### Makale Listem
 
-Profilim (Kullanıcı bilgilerini güncelleme, şifre değiştirme)
+### Profilim (Kullanıcı bilgilerini güncelleme, şifre değiştirme)
 
-🧠 Dependency Injection Geliştirmesi
+### 🧠 Dependency Injection Geliştirmesi
 BusinessLayer > Container > DependencyInjection.cs içerisinde
 Program.cs üzerindeki services.AddScoped... kayıtları extension olarak taşındı:
 
-csharp
-Copy
-Edit
-services.AddBusinessLayerServices();
-👥 Yazarlar & Kategoriler
-👤 Yazar Sayfası
+''' services.AddBusinessLayerServices(); '''
+
+### 👥 Yazarlar & Kategoriler
+#### 👤 Yazar Sayfası
 Menüde Yazarlar tıklanınca 3 sütunlu responsive grid tasarımı
 
 Yazar kartında:
@@ -97,12 +88,12 @@ Adı, resmi, kısa açıklama
 
 Tıklandığında: yazara ait tüm makaleler listelenir
 
-🏷️ Kategoriler
+### 🏷️ Kategoriler
 Ana menüde kategori listesi
 
 Her kategoriye özel detay sayfasında o kategoriye ait bloglar
 
-🧪 Validasyon ve Kullanıcı Deneyimi
+### 🧪 Validasyon ve Kullanıcı Deneyimi
 FluentValidation kullanımı
 
 Formlarda client-side validasyon
@@ -111,7 +102,7 @@ Geri bildirimler TempData["message"] ile
 
 AJAX işlemler sonrası bildirim, form sıfırlama, yeniden yönlendirme desteği
 
-🖼️ Ekran Görselleri 
+### 🖼️ Ekran Görselleri 
 ![Screenshot 2025-07-06 110053](https://github.com/user-attachments/assets/ded68c43-47ed-4617-ab37-e6d1e7bd2217)
 ![Screenshot 2025-07-06 110034](https://github.com/user-attachments/assets/f78a4a4b-897e-4d6d-8406-c20199451f7c)
 ![Screenshot 2025-07-06 110631](https://github.com/user-attachments/assets/e2dfe3fb-7c3e-4000-bfa7-3b27c0c0490b)

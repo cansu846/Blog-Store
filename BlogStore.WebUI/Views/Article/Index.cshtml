@@ -1,0 +1,82 @@
+﻿@using BlogStore.EnitityLayer.Entities
+@model List<Article>
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="card mt-5">
+        <div class="card-body">
+            <div class="d-md-flex align-items-center">
+                <div>
+                    <h4 class="card-title">Makale Listesi</h4>
+                    <p class="card-subtitle">
+                    </p>
+                </div>
+                <div class="ms-auto mt-3 mt-md-0">
+                    @*  <select class="form-select theme-select border-0" aria-label="Default select example">
+                        <option value="1">March 2025</option>
+                        <option value="2">March 2025</option>
+                        <option value="3">March 2025</option>
+                    </select> *@
+                </div>
+            </div>
+            <div class="table-responsive mt-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="px-0 text-muted">
+                                #
+                            </th>
+                            <th scope="col" class="px-0 text-muted">Makale adı</th>
+                            <th scope="col" class="px-0 text-muted">Yazar adı</th>
+                            <th scope="col" class="px-0 text-muted">kategori adı</th>
+                           
+                            <th scope="col" class="px-0 text-muted">
+                                Güncelle
+                            </th>  
+                            <th scope="col" class="px-0 text-muted">
+                               Siteye Git
+                            </th>
+                            <th scope="col" class="px-0 text-muted">
+                                Sil
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr class="align-items-center justify-content-center">
+                                <td>@item.ArticleId</td>
+
+                                <td>
+                                    <div>
+                                        <img src="@item.ImageUrl" style="width:250px; "/>
+                                    </div>
+
+                                    <div class="p-8 display-8 text-primary me-3">@item.Title</div>
+                                </td>
+                               
+                                <td>@item.AppUser.Name @item.AppUser.Surname</td>
+                                <td>
+                                    <span class="badge text-bg-primary">@item.Category.CategoryName</span>
+
+                                </td>
+                              
+                                <td><a href="/Article/UpdateArticle/@item.ArticleId" class="btn btn-success">Güncelle</a></td>
+                                <td><a href="/Article/ArticleDetail/@item.Slug" class="btn btn-outline-indigo">İncele</a></td>
+                                <td>
+                                    <a href="/Article/DeleteArticle/@item.ArticleId" class="btn btn-danger">Sil</a>
+
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+                <a href="/Article/CreateArticle/" class="btn btn-success mt-3">Makale Oluştur</a>
+
+            </div>
+        </div>
+    </div>
+</div>

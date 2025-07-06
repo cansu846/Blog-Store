@@ -1,5 +1,8 @@
 using BlogStore.BussinessLayer.Abstract;
+using BlogStore.BussinessLayer.AnalizeCommentService;
 using BlogStore.BussinessLayer.Concrete;
+using BlogStore.BussinessLayer.Container;
+using BlogStore.BussinessLayer.MailService;
 using BlogStore.DataAccessLayer.Abstract;
 using BlogStore.DataAccessLayer.Context;
 using BlogStore.DataAccessLayer.EntityFramework;
@@ -7,36 +10,15 @@ using BlogStore.EnitityLayer.Entities;
 using BlogStore.WebUI.Controllers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
-builder.Services.AddScoped<ICategoryService, CategoryManager>();
-builder.Services.AddScoped<ICommentService, CommentManager>();
-builder.Services.AddScoped<ICommentDal, EfCommentDal>();
-builder.Services.AddScoped<IArticleService, ArticleManager>();
-builder.Services.AddScoped<IArticleDal, EfArticleDal>();
+builder.Services.AddBussinessService();
 
-builder.Services.AddScoped<ITagService, TagManager>();
-builder.Services.AddScoped<ITagDal, EfTagDal>();
-
-builder.Services.AddScoped<IAboutService, AboutManager>();
-builder.Services.AddScoped<IAboutDal, EfAboutDal>();
-
-builder.Services.AddIdentity<AppUser, IdentityRole>()
-    .AddEntityFrameworkStores<BlogContext>()
-     .AddDefaultTokenProviders();
-
-builder.Services.AddDbContext<BlogContext>();
-
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    options.LoginPath = "/Login/UserLogin/";   //yönlendirilecek login sayfas?
-    options.AccessDeniedPath = "/Login/AccessDenied"; // yetkisiz eri?im için (opsiyonel)
-});
+builder.Services.AddHttpClient<HuggingFaceModerationService>();
 
 var app = builder.Build();
 
@@ -74,7 +56,7 @@ app.MapDefaultControllerRoute(); // opsiyonel
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Default}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 

@@ -36,11 +36,11 @@ namespace BlogStore.DataAccessLayer.EntityFramework
 
         public List<Article> GetArticlesWithCategories()
         {
-            return _context.Articles.Include(x => x.Category).OrderByDescending(x=>x.ArticleId).ToList();
+            return _context.Articles.Include(x => x.Category).Include(x=>x.AppUser).Include(x => x.Comments).OrderByDescending(x=>x.ArticleId).ToList();
         }
         public List<Article> GetArticlesByAppUser(string id)
         {
-            return _context.Articles.Include(x => x.Category).Where(x=>x.AppUserId==id).ToList();
+            return _context.Articles.Include(x => x.Category).Include(x => x.Comments).Where(x=>x.AppUserId==id).OrderByDescending(x=>x.ArticleId).ToList();
         }
 
         public Article GetArticleWithAuthor(int id)

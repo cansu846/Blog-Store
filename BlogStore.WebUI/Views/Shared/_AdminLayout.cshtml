@@ -13,6 +13,8 @@
     <title>Flexy Free Bootstrap Admin Template by WrapPixel</title>
     <link rel="shortcut icon" type="image/png" href="/flexy-bootstrap-lite-1.0.0/assets/images/logos/favicon.png" />
     <link rel="stylesheet" href="/flexy-bootstrap-lite-1.0.0/assets/css/styles.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
 </head>
 
 <body>
@@ -39,7 +41,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="/Admin/Index/" aria-expanded="false">
+                        <a class="sidebar-link" href="/Dashboard/Index/" aria-expanded="false">
                             <i class="ti ti-atom"></i>
                             <span class="hide-menu">Yönetim Paneli</span>
                         </a>
@@ -55,6 +57,30 @@
                                     <i class="ti ti-aperture"></i>
                                 </span>
                                 <span class="hide-menu">Kategoriler</span>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link justify-content-between"
+                           href="/Article/Index/" aria-expanded="false">
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="d-flex">
+                                    <i class="ti ti-aperture"></i>
+                                </span>
+                                <span class="hide-menu">Makaleler</span>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link justify-content-between"
+                           href="/Author/Index/" aria-expanded="false">
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="d-flex">
+                                    <i class="ti ti-aperture"></i>
+                                </span>
+                                <span class="hide-menu">Yazarlar</span>
                             </div>
 
                         </a>
@@ -135,6 +161,29 @@
                         </a>
                     </li>
                     <li class="sidebar-item">
+                        <a class="sidebar-link justify-content-between"
+                           href="/UserPassword/ForgotPassword" aria-expanded="false">
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="d-flex">
+                                    <i class="ti ti-layout-kanban"></i>
+                                </span>
+                                <span class="hide-menu">Şifremi Unuttum</span>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link justify-content-between"
+                           href="/UserPassword/ForgotPassword" aria-expanded="false">
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="d-flex">
+                                    <i class="ti ti-layout-kanban"></i>
+                                </span>
+                                <span class="hide-menu">Profilimi Güncelle</span>
+                            </div>
+
+                        </a>
+                    </li>
                
                 </ul>
             </nav>
@@ -145,6 +194,7 @@
     <!--  Sidebar End -->
     <!--  Main wrapper -->
     @RenderBody()
+    <script src="~/lib/apexcharts/apexcharts.min.js"></script>
 
     <script src="/flexy-bootstrap-lite-1.0.0/assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="/flexy-bootstrap-lite-1.0.0/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -155,6 +205,7 @@
     <script src="/flexy-bootstrap-lite-1.0.0/assets/js/dashboard.js"></script>
     <!-- solar icons -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

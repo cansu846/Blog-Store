@@ -9,11 +9,14 @@ C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\BlogStor
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\BlogStore.WebUI.pdb
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\FluentValidation.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Humanizer.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\MailKit.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.Build.dll
@@ -45,6 +48,8 @@ C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsof
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
@@ -68,6 +73,7 @@ C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsof
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\MimeKit.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Mono.TextTemplating.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\bin\Debug\net9.0\NuGet.Common.dll
@@ -264,6 +270,7 @@ C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\BlogStor
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\BlogStore.WebUI.AssemblyInfoInputs.cache
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\BlogStore.WebUI.AssemblyInfo.cs
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\BlogStore.WebUI.csproj.CoreCompileInputs.cache
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\BlogStore.WebUI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\BlogStore.WebUI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\BlogStore.WebUI.RazorAssemblyInfo.cache
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\BlogStore.WebUI.RazorAssemblyInfo.cs
@@ -337,7 +344,7 @@ C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\compress
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\compressed\azv61udxy3-vuucby2h54.gz
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\compressed\wrg9tzykfi-tz2kp9vt3u.gz
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\compressed\qz8e8lvcpx-1nt3h85a3o.gz
-C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\compressed\6xb3iyd5vy-uqxaisjv4q.gz
+C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\compressed\6xb3iyd5vy-s7f4alk73h.gz
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\compressed\fxwb6060nf-jwa1bmm0tt.gz
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\compressed\7m0v3jq3uz-soqi5c11ed.gz
 C:\Users\Cansu\source\repos\Blog Store\BlogStore.WebUI\obj\Debug\net9.0\compressed\1ewogtipvu-macq4x42jj.gz

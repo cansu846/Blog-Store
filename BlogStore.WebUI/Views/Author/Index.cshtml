@@ -1,0 +1,36 @@
+﻿@model List<AuthorCardViewModel>
+
+@{
+    ViewData["Title"] = "Yazarlar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <h2 class="m-4">Yazarlar</h2>
+
+    <div class="row">
+        @foreach (var author in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="@author.ImageUrl"
+                         class="card-img-top" style="height: 250px; object-fit: cover;" alt="Profil Resmi" />
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            @author.FullName
+                            <span class="badge bg-primary float-end">@author.ArticleCount Makale</span>
+                        </h5>
+                        <p class="card-text p-1 mt-3">
+                            @author.Description
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <i class="bi bi-envelope"></i> @author.Email
+                    </div>
+                    <a href="/Author/Detail/@author.UserName" class="btn btn-info text-center stretched-link mt-4">Detayına Git</a>
+
+                </div>
+            </div>
+        }
+    </div>
+</div>

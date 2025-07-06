@@ -1,0 +1,42 @@
+﻿<div class="col-lg-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="d-flex align-items-center">
+                <h4 class="card-title mb-0">İstatistiklerim</h4>
+
+            </div>
+            <div class="d-flex align-items-center flex-row mt-4">
+                <div class="p-2 display-5 text-primary">
+                    <img src="/flexy-bootstrap-lite-1.0.0/assets/images/profile/user-2.jpg" />
+                </div>
+                <div class="p-2">
+                    <h3 class="mb-0">@ViewBag.user.Name</h3>
+                    <small>Yazar</small>
+                </div>
+            </div>
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <td>Toplam Makale Sayım</td>
+                        <td class="fw-medium">@ViewBag.articleCount</td>
+                    </tr>
+                    <tr>
+                        <td>Toplam Yorum Sayım</td>
+                        <td class="fw-medium">@ViewBag.commentCount</td>
+                    </tr>
+                    <tr>
+                        <td>Son Yayınlanan Makale Tarihi</td>
+                        <td class="fw-medium">@ViewBag.articels[0].CreateDate.ToString("mm-dd-yyyy")</td>
+                    </tr>
+                    <tr>
+                        <td>Sisteme Katılma Tarihi</td>
+                        <td class="fw-medium">@ViewBag.user.CreatedDate.ToString("mm-dd-yyyy")</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <hr />
+
+        </div>
+    </div>
+</div>

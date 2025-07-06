@@ -54,7 +54,7 @@ namespace BlogStore.BussinessLayer.Concrete
         {
             entity.Slug = SlugHelper.GenerateSlug(entity.Title);
 
-            if (entity.Title.Length >= 5 && entity.Title.Length <= 100 &&
+            if (entity.Title.Length >= 3 && entity.Title.Length <= 100 &&
                 entity.Description != "")
                 {
                 _articleDal.Insert(entity);

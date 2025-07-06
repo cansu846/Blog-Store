@@ -44,12 +44,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZVxBcnRpY2xlRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Article/CreateArticle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZVxDcmVhdGVBcnRpY2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Article/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Author/CreateArticle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXENyZWF0ZUFydGljbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Author/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Author/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEVkaXRQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Author/GetProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEdldFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Author/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Author/MyArticleList.cshtml]
@@ -78,6 +98,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Comment/UpdateComment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxVcGRhdGVDb21tZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Default/Index.cshtml]
@@ -114,6 +138,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Shared/Components/ArticleDetailTagsComponentPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQXJ0aWNsZURldGFpbFRhZ3NDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Shared/Components/DashboardGeneralStatistics/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFzaGJvYXJkR2VuZXJhbFN0YXRpc3RpY3NcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Shared/Components/DashboardLastArticle/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFzaGJvYXJkTGFzdEFydGljbGVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Shared/Components/DashboardUserStatistics/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFzaGJvYXJkVXNlclN0YXRpc3RpY3NcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/Shared/Components/_ArticleDetailAboutAuthorComponentPartial/Default.cshtml]
@@ -182,6 +218,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/UserPassword/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclBhc3N3b3JkXENoYW5nZVBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/UserPassword/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclBhc3N3b3JkXEZvcmdvdFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/UserPassword/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclBhc3N3b3JkXFJlc2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Cansu/source/repos/Blog Store/BlogStore.WebUI/Views/_ViewImports.cshtml]

@@ -30,7 +30,7 @@ namespace BlogStore.WebUI.Controllers
             
             if (result.Succeeded)
             {
-                return RedirectToAction("Index", "Default");
+                return RedirectToAction("GetProfile", "Author");
             }
 
             ModelState.AddModelError("","Geçersiz kullanıcı adı veya şifre");

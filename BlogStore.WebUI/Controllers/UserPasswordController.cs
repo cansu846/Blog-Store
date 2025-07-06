@@ -2,22 +2,25 @@
 using BlogStore.WebUI.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
+using NuGet.Protocol;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BlogStore.WebUI.Controllers
 {
-    [Authorize]
     public class UserPasswordController : Controller
     {
         private readonly SignInManager<AppUser> _signInManager;
         private readonly UserManager<AppUser> _userManager;
+        private readonly IEmailSender _emailSender;
 
-        public UserPasswordController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager   )
+        public UserPasswordController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager, IEmailSender  emailSender )
         {
             _signInManager = signInManager;
             _userManager = userManager;
+            _emailSender = emailSender;
         }
 
         [HttpGet]
@@ -64,22 +67,76 @@ namespace BlogStore.WebUI.Controllers
             return View(model);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> UserLogin(UserLoginViewModel userLoginViewModel)
+
+        [HttpGet]
+        public async Task<IActionResult> ForgotPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]  
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
         {
             if (!ModelState.IsValid)
             {
-                return View(userLoginViewModel);
-            }
-            var result = await _signInManager.PasswordSignInAsync(userLoginViewModel.Username, userLoginViewModel.Password, true,false);
-            
-            if (result.Succeeded)
-            {
-                return RedirectToAction("Index", "Default");
+                return View(model); 
             }
 
-            ModelState.AddModelError("","Geçersiz kullanıcı adı veya şifre");
-            return View(userLoginViewModel);
+            var user = await _userManager.FindByEmailAsync(model.Email);
+
+            if (user == null) {
+                ModelState.AddModelError("", "E-posta adresinize şifre sıfırlama bağlantısı gönderildi.");
+                return View();
+            }
+
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var resetLink = Url.Action("ResetPassword","UserPassword", new
+            {
+                email = user.Email,
+                token = token
+            },Request.Scheme);
+
+            await _emailSender.SendEmailAsync(user.Email, "Şifre Sıfırlama",
+      $"<p>Şifrenizi sıfırlamak için <a href='{resetLink}'>buraya tıklayın</a>.</p>");
+
+            ViewBag.Message = "E-posta adresinize şifre sıfırlama bağlantısı gönderildi.";
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult ResetPassword(string email, string token)
+        {
+            return View(new ResetPasswordViewModel { Email=email, Token=token});  
+        }
+
+        [HttpPost]  
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model); 
+            }
+
+            var user = await _userManager.FindByEmailAsync(model.Email);
+
+            if (user == null) {
+                ModelState.AddModelError("","Kullanıcı bulunamadı");
+                return View();
+            }
+
+            var result = await _userManager.ResetPasswordAsync(user,model.Token,model.NewPassword);
+
+            if (result.Succeeded) {
+                TempData["Success"] = "Şifreniz başarıyla değiştirildi.";
+                return RedirectToAction("UserLogin","Login");
+            }
+
+            foreach (var item in result.Errors)
+            {
+                ModelState.AddModelError("",item.Description);
+            }
+
+            return View(model); 
         }
     }
 }

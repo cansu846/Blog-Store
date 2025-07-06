@@ -1,0 +1,55 @@
+﻿@model CreateArticleViewModel
+
+@{
+    ViewData["Title"] = "Makale Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="container">
+    <h2 class=" m-4">Makale Ekle</h2>
+
+    <form method="post">
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label">Başlık</label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label">Açıklama</label>
+            <textarea asp-for="Description" class="form-control" rows="5"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ImageUrl" class="form-label">Görsel URL</label>
+            <input asp-for="ImageUrl" class="form-control" />
+            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        </div>
+
+   @*      <div class="mb-3">
+            <label asp-for="Slug" class="form-label">Slug (URL için)</label>
+            <input type="hidden" asp-for="Slug" class="form-control" />
+            <span asp-validation-for="Slug" class="text-danger"></span>
+        </div> *@
+
+        <div class="mb-3">
+            <label asp-for="CategoryId" class="form-label">Kategori</label>
+            <select asp-for="CategoryId" class="form-select" asp-items="@Model.Categories">
+                <option value="">Kategori seçin</option>
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Makale Ekle</button>
+    </form>
+</div>
+@* <script>
+    document.getElementById("Title").addEventListener("input", function () {
+        const slugInput = document.getElementById("Slug");
+        slugInput.value = this.value
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/(^-|-$)+/g, '');
+    });
+</script>
+ *@

@@ -81,6 +81,9 @@ namespace BlogStore.DataAccessLayer.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -232,6 +235,9 @@ namespace BlogStore.DataAccessLayer.Migrations
 
                     b.Property<bool>("IsValid")
                         .HasColumnType("bit");
+
+                    b.Property<float?>("ToxicityScore")
+                        .HasColumnType("real");
 
                     b.Property<string>("UserNameSurname")
                         .IsRequired()

@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BlogStore.WebUI.pqvgo59w3q.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-seCibqiiW55C9/YzyOvKjuXgbEFgsiuYXAHp0vBlFQM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1133"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022seCibqiiW55C9/YzyOvKjuXgbEFgsiuYXAHp0vBlFQM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 29 Jun 2025 19:08:18 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1133"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022seCibqiiW55C9/YzyOvKjuXgbEFgsiuYXAHp0vBlFQM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 06 Jul 2025 06:58:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BlogStore.WebUI/BlogStore.WebUI.pqvgo59w3q.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BlogStore.WebUI.pqvgo59w3q.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pqvgo59w3q"},{"Name":"integrity","Value":"sha256-seCibqiiW55C9/YzyOvKjuXgbEFgsiuYXAHp0vBlFQM="},{"Name":"label","Value":"_content/BlogStore.WebUI/BlogStore.WebUI.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1133"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022seCibqiiW55C9/YzyOvKjuXgbEFgsiuYXAHp0vBlFQM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 29 Jun 2025 19:08:18 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1133"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022seCibqiiW55C9/YzyOvKjuXgbEFgsiuYXAHp0vBlFQM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 06 Jul 2025 06:58:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BlogStore.WebUI/blogy-1.0.0/about.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\blogy-1.0.0\about.html'))</AssetFile>
@@ -2685,14 +2685,14 @@
     <StaticWebAssetEndpoint Include="_content/BlogStore.WebUI/flexy-bootstrap-lite-1.0.0/assets/libs/apexcharts/dist/apexcharts.min.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\flexy-bootstrap-lite-1.0.0\assets\libs\apexcharts\dist\apexcharts.min.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VvsSKf53yMxm8x6hJb6p7TejhAyXtmoj5EyFHP9xeys="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"539664"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022VvsSKf53yMxm8x6hJb6p7TejhAyXtmoj5EyFHP9xeys=\u0022"},{"Name":"Last-Modified","Value":"Sat, 28 Jun 2025 16:29:03 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-COQ661UreWYzr/66IgPdxEOCZNg/u5DOkMsVN2Sn2mI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"539670"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022COQ661UreWYzr/66IgPdxEOCZNg/u5DOkMsVN2Sn2mI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 08:21:00 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BlogStore.WebUI/flexy-bootstrap-lite-1.0.0/assets/libs/apexcharts/dist/apexcharts.min.uqxaisjv4q.js">
+    <StaticWebAssetEndpoint Include="_content/BlogStore.WebUI/flexy-bootstrap-lite-1.0.0/assets/libs/apexcharts/dist/apexcharts.min.s7f4alk73h.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\flexy-bootstrap-lite-1.0.0\assets\libs\apexcharts\dist\apexcharts.min.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uqxaisjv4q"},{"Name":"integrity","Value":"sha256-VvsSKf53yMxm8x6hJb6p7TejhAyXtmoj5EyFHP9xeys="},{"Name":"label","Value":"_content/BlogStore.WebUI/flexy-bootstrap-lite-1.0.0/assets/libs/apexcharts/dist/apexcharts.min.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"539664"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022VvsSKf53yMxm8x6hJb6p7TejhAyXtmoj5EyFHP9xeys=\u0022"},{"Name":"Last-Modified","Value":"Sat, 28 Jun 2025 16:29:03 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"s7f4alk73h"},{"Name":"integrity","Value":"sha256-COQ661UreWYzr/66IgPdxEOCZNg/u5DOkMsVN2Sn2mI="},{"Name":"label","Value":"_content/BlogStore.WebUI/flexy-bootstrap-lite-1.0.0/assets/libs/apexcharts/dist/apexcharts.min.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"539670"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022COQ661UreWYzr/66IgPdxEOCZNg/u5DOkMsVN2Sn2mI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Jul 2025 08:21:00 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BlogStore.WebUI/flexy-bootstrap-lite-1.0.0/assets/libs/apexcharts/dist/apexcharts.vuucby2h54.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\flexy-bootstrap-lite-1.0.0\assets\libs\apexcharts\dist\apexcharts.css'))</AssetFile>

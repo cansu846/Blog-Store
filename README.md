@@ -102,8 +102,6 @@ AJAX işlemler sonrası bildirim, form sıfırlama, yeniden yönlendirme desteğ
 ### 🖼️ Ekran Görselleri 
 ![Screenshot 2025-07-06 110053](https://github.com/user-attachments/assets/ded68c43-47ed-4617-ab37-e6d1e7bd2217)
 ![Screenshot 2025-07-06 110034](https://github.com/user-attachments/assets/f78a4a4b-897e-4d6d-8406-c20199451f7c)
-![Screenshot 2025-07-06 110631](https://github.com/user-attachments/assets/e2dfe3fb-7c3e-4000-bfa7-3b27c0c0490b)
-![Screenshot 2025-07-06 110641](https://github.com/user-attachments/assets/6867f626-6eb6-41d0-859b-37ff11945b71)
 ![Screenshot 2025-07-06 111453](https://github.com/user-attachments/assets/5c55743c-205c-4c5c-b1d3-7df3a0334ca8)
 ![Screenshot 2025-07-06 111459](https://github.com/user-attachments/assets/424d5cfd-d1b6-48e4-b009-88fc1a607460)
 ![Screenshot 2025-07-06 111510](https://github.com/user-attachments/assets/4dada259-9b40-424b-8fdf-e9fc3444121e)

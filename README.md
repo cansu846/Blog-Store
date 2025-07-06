@@ -1,99 +1,109 @@
 # 📰 BlogStore – Katmanlı Mimari Blog Platformu
-ASP.NET Core MVC ile geliştirilen BlogStore, kullanıcıların blog yazabildiği, yorum yapabildiği, admin paneli ile içeriklerin yönetilebildiği modern bir web uygulamasıdır.
 
-## 📌 Katmanlı Mimari ve Proje Özeti
-Bu proje aşağıdaki katmanlardan oluşur:
+**BlogStore**, ASP.NET Core MVC ile geliştirilmiş, kullanıcıların blog yazabildiği, yorum yapabildiği, yazarların takip edilebildiği ve admin paneliyle içeriklerin kolayca yönetilebildiği modern ve ölçeklenebilir bir **katmanlı mimari** blog platformudur.
 
-EntityLayer: Veritabanı modelleri
+---
 
-DataAccessLayer: Entity Framework Core işlemleri
+## 📌 Proje Mimarisi
 
-BusinessLayer: Servisler, validasyon ve iş mantığı
+BlogStore, SOLID prensipleri ve temiz kod anlayışıyla oluşturulmuş, modüler bir yapıya sahiptir. Katmanlar:
 
-WebUI: ASP.NET Core MVC arayüz katmanı
+- **EntityLayer**: Veritabanı modelleri  
+- **DataAccessLayer**: Entity Framework Core işlemleri (CRUD)  
+- **BusinessLayer**: İş kuralları, servisler ve validasyonlar  
+- **WebUI**: ASP.NET Core MVC kullanıcı arayüzü  
+- **ViewModels**: Görünümle veri transferi için özelleştirilmiş sınıflar  
 
-ViewModels: Veri transferleri için sade sınıflar
+---
+
+## 📚 Kullanılan Teknolojiler
+- ASP.NET Core MVC (.NET 8)*
+- Entity Framework Core
+- ASP.NET Core Identity
+- FluentValidation
+- AJAX / jQuery
+- SQL Server
 
 ## 🚀 Temel Özellikler
-### 🌐 Anasayfa
-SEO uyumlu, görsel destekli ana sayfa tasarımı
 
-Slug yapısı ile URL’lerde sadece makale başlığı görünür
-Örn: /Article/ArticleDetail/yapay-zeka-ve-gelecek
+### 🌐 Anasayfa
+
+- SEO uyumlu, görsel destekli modern bir arayüz  
+- Slug yapısı sayesinde URL’lerde **makale ID’si yerine başlık** görünür  
+  - Örnek: `/Article/ArticleDetail/yapay-zeka-ve-gelecek`
 
 ### 📄 Makale Detay Sayfası
-Tıklanan makalenin detayları gösterilir
 
-Başlık altında yazara ait bilgiler (adı, resmi, açıklama)
+- Seçilen makalenin tam içeriği görüntülenir  
+- Altında **yazar bilgileri (adı, resmi, açıklama)** yer alır  
+- **Login olmayan kullanıcılar yorum formunu göremez**  
+- **AJAX ile yorum gönderimi** sağlanır  
+- **Client-side validation** ile kullanıcı deneyimi artırılır  
 
-AJAX ile yorum gönderme (login olmayan kullanıcılar yorum panelini görmez)
+---
 
-Client-side validation desteği
+## 🔐 Kullanıcı İşlemleri
 
-### 🔐 Kimlik Doğrulama
-Giriş (Login), Kayıt (Register), Şifre Sıfırlama, Çıkış işlemleri
+- Giriş (Login) / Kayıt (Register) / Çıkış (Logout)  
+- Şifre sıfırlama ve değiştirme  
+- Profil bilgilerini güncelleme  
+- ASP.NET Core Identity altyapısı kullanılmıştır  
 
-ASP.NET Identity ile entegre
+---
 
-Şifre değiştirme, profil bilgilerini güncelleme
+## 🛠️ Admin Paneli (Flexy Teması ile)
 
-### 🛠️ Admin Paneli
-Tema: Flexy Admin Panel
-Panelde yer alan bölümler:
+### 📊 Dashboard
 
-#### 📊 Dashboard
-Toplam kullanıcı, makale, kategori, yorum sayısı
+- Toplam makale, yorum, kategori, kullanıcı sayıları  
+- En son eklenen makaleler listesi  
+- Kullanıcıya özel istatistik kutucukları  
 
-Son eklenen makaleler listesi
+### 📋 İçerik Yönetimi
 
-Kullanıcıya özel hızlı istatistik kutucukları
+- Makale ve kategori oluşturma, düzenleme, silme  
+- Kullanıcı profili ve şifre güncelleme ekranı  
 
-#### 📋 İçerik Yönetimi
-Makale oluşturma, silme, düzenleme
+### 🧩 Menü Alanları
 
-Kategori ekle / sil / güncelle
+- **Yeni Makale Oluştur**  
+- **Makale Listem**  
+- **Profilim**  
 
-Yorumları listeleme ve toksik olanları ayrı görme
+---
 
-Profil bilgileri ve şifre güncelleme alanı
+## 👥 Yazarlar ve Kategoriler
 
-#### 🧩 Menü Alanları
-Yeni Makale Oluştur
+### 👤 Yazarlar
 
-#### Makale Listem
-
-#### Profilim (Kullanıcı bilgilerini güncelleme, şifre değiştirme)
-
-#### 👥 Yazarlar & Kategoriler
-
-##### 👤 Yazar Sayfası
-Menüde Yazarlar tıklanınca 3 sütunlu responsive grid tasarımı
-
-Yazar kartında:
-
-Adı, resmi, kısa açıklama
-
-Tıklandığında: yazara ait tüm makaleler listelenir
+- Menüde yer alan "Yazarlar" sayfasında tüm yazarlar 3 sütunlu **responsive kartlar** ile listelenir  
+- Her yazar kartında adı, fotoğrafı ve kısa açıklaması yer alır  
+- Bir yazara tıklanınca sadece o yazara ait bloglar görüntülenir  
 
 ### 🏷️ Kategoriler
-Ana menüde kategori listesi
 
-Her kategoriye özel detay sayfasında o kategoriye ait bloglar
+- Ana menüden tüm kategorilere erişim sağlanır  
+- Her kategori detay sayfasında o kategoriye ait bloglar listelenir  
 
-### 🧠 Dependency Injection Geliştirmesi
-BusinessLayer > Container > DependencyInjection.cs içerisinde
-Program.cs üzerindeki services.AddScoped... kayıtları extension olarak taşındı:
+---
 
-''' services.AddBusinessLayerServices(); '''
+## 🧪 Validasyon & Kullanıcı Deneyimi
 
-### 🧪 Validasyon ve Kullanıcı Deneyimi
-FluentValidation kullanımı
+- **FluentValidation** ile model doğrulama  
+- Formlarda **client-side validation**  
+- Hatalı girişlerde kullanıcıya **TempData["message"]** ile bilgilendirme  
+- AJAX işlemler sonrası dinamik geri bildirimler, form temizleme ve yönlendirme  
 
-Formlarda client-side validasyon
+---
 
-Geri bildirimler TempData["message"] ile
+## 🧱 Dependency Injection Geliştirmesi
 
-AJAX işlemler sonrası bildirim, form sıfırlama, yeniden yönlendirme desteği
+Tüm servis kayıtları `BusinessLayer > Container > DependencyInjection.cs` içerisine taşınmış ve aşağıdaki şekilde çağrılmıştır:
+
+```csharp
+services.AddBusinessLayerServices();
+```
+---
 
 ### Eklenecek Özellikler
 

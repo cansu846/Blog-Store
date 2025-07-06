@@ -12,7 +12,7 @@ BusinessLayer: Servisler, validasyon ve iş mantığı
 
 WebUI: ASP.NET Core MVC arayüz katmanı
 
-DTOs ve ViewModels: Veri transferleri için sade sınıflar
+ViewModels: Veri transferleri için sade sınıflar
 
 ## 🚀 Temel Özellikler
 ### 🌐 Anasayfa

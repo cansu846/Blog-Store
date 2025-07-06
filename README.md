@@ -18,10 +18,6 @@ ViewModels: Veri transferleri için sade sınıflar
 ### 🌐 Anasayfa
 SEO uyumlu, görsel destekli ana sayfa tasarımı
 
-Test/örnek değil, gerçek ve tutarlı makale içerikleri
-
-Her blog altında “Devamını Oku” butonu
-
 Slug yapısı ile URL’lerde sadece makale başlığı görünür
 Örn: /Article/ArticleDetail/yapay-zeka-ve-gelecek
 
@@ -34,10 +30,6 @@ AJAX ile yorum gönderme (login olmayan kullanıcılar yorum panelini görmez)
 
 Client-side validation desteği
 
-Toksik yorum filtresi (HuggingFace API ile)
-
-Yorumların toksik skoru yüksekse veritabanına eklenmez, kullanıcıya bildirim verilir
-
 ### 🔐 Kimlik Doğrulama
 Giriş (Login), Kayıt (Register), Şifre Sıfırlama, Çıkış işlemleri
 
@@ -49,14 +41,14 @@ ASP.NET Identity ile entegre
 Tema: Flexy Admin Panel
 Panelde yer alan bölümler:
 
-### 📊 Dashboard
+#### 📊 Dashboard
 Toplam kullanıcı, makale, kategori, yorum sayısı
 
 Son eklenen makaleler listesi
 
 Kullanıcıya özel hızlı istatistik kutucukları
 
-### 📋 İçerik Yönetimi
+#### 📋 İçerik Yönetimi
 Makale oluşturma, silme, düzenleme
 
 Kategori ekle / sil / güncelle
@@ -65,21 +57,16 @@ Yorumları listeleme ve toksik olanları ayrı görme
 
 Profil bilgileri ve şifre güncelleme alanı
 
-### 🧩 Menü Alanları
+#### 🧩 Menü Alanları
 Yeni Makale Oluştur
 
-### Makale Listem
+#### Makale Listem
 
-### Profilim (Kullanıcı bilgilerini güncelleme, şifre değiştirme)
+#### Profilim (Kullanıcı bilgilerini güncelleme, şifre değiştirme)
 
-### 🧠 Dependency Injection Geliştirmesi
-BusinessLayer > Container > DependencyInjection.cs içerisinde
-Program.cs üzerindeki services.AddScoped... kayıtları extension olarak taşındı:
+#### 👥 Yazarlar & Kategoriler
 
-''' services.AddBusinessLayerServices(); '''
-
-### 👥 Yazarlar & Kategoriler
-#### 👤 Yazar Sayfası
+##### 👤 Yazar Sayfası
 Menüde Yazarlar tıklanınca 3 sütunlu responsive grid tasarımı
 
 Yazar kartında:
@@ -92,6 +79,12 @@ Tıklandığında: yazara ait tüm makaleler listelenir
 Ana menüde kategori listesi
 
 Her kategoriye özel detay sayfasında o kategoriye ait bloglar
+
+### 🧠 Dependency Injection Geliştirmesi
+BusinessLayer > Container > DependencyInjection.cs içerisinde
+Program.cs üzerindeki services.AddScoped... kayıtları extension olarak taşındı:
+
+''' services.AddBusinessLayerServices(); '''
 
 ### 🧪 Validasyon ve Kullanıcı Deneyimi
 FluentValidation kullanımı
